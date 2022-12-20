@@ -6,11 +6,13 @@ const myBody = document.querySelector(".outer");
 
 btn.addEventListener('click', function () {
     let randomValue = "#";
-    for(let i = 0;i<6;i++){
-        // myBody.style.backgroundColor = colors[randomValue];      
+    
+    for(let i = 0;i<6;i++){  
+        
         randomValue += hexColors[getRandomValue()];
-
+        
     }
+    
     showColor.innerHTML = randomValue;
     myBody.style.backgroundColor = randomValue;
 });
