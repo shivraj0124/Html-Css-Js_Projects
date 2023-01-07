@@ -50,12 +50,14 @@ var OutCon = document.querySelector('.outer-container');
 dark.addEventListener('click', () => {
   light.style.display = 'block';
   dark.style.display = 'none';
+  checkInput=0;
 
   myBody.style.backgroundColor = 'rgba(3, 2, 15, 0.826)';
   mainName.style.color = 'rgb(10, 165, 129)';
   mainName.style.backgroundColor = 'rgba(17, 17, 17, 0.658)'
   OutCon.style.backgroundColor = 'rgb(14, 0, 0)';
   OutCon.style.borderColor = '#fff';
+  inpt.style.backgroundColor = 'rgb(56, 69, 65)';
 
   buttons.forEach((items) => {
     items.classList.remove('btnLight');
